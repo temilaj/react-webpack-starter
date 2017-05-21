@@ -2,7 +2,11 @@
   "name": "react-webpack-starter",
   "version": "1.0.0",
   "description": "a boiler plate for creating react applications bundled by webpack",
-  "main": "js/app.js",
+  "main": "src/js/app.js",
+  "scripts": {
+    "start": "webpack-dev-server --entry ./src/js/app.js --output-filename ./dist/bundle.js",
+    "build": "webpack"
+  },
   "repository": "https://github.com/temilaj/react-webpack-starter.git",
   "author": "Temi Lajumoke <temi@temilajumoke.com>",
   "license": "MIT",
