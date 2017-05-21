@@ -23,3 +23,8 @@ bash npm install
 
 ## Running the app
 Run `npm start` to intialize and run the webpack development server. Navigate to `http://localhost:3000/`. The app will automatically reload if you change any of the source files.
+
+
+## LICENSE
+
+#### [MIT](./LICENSE)
