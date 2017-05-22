@@ -2,7 +2,7 @@
 A boiler plate for creating react applications bundled by webpack (using ES6, Babel, SASS and webpack development server)
 
 ## Requirements
-To run this project, you’ll need to install [node 5 and above](https://nodejs.org/en/) the latest version of Node.js is recommended. You'll also need a global installation of [webpack](https://webpack.js.org/ )and the [webpack development server](https://webpack.js.org/configuration/dev-server/). 
+To run this project, you’ll need to install [node 5 and above](https://nodejs.org/en/) the latest version of Node.js is recommended. You'll also need a global installation of [webpack](https://webpack.js.org/ ) and the [webpack development server](https://webpack.js.org/configuration/dev-server/). 
 
 ```
 npm i -g webpack webpack-dev-server
@@ -12,13 +12,13 @@ The dependencies of this project are managed with yarn (see installation guide [
 
 ## Installing Packages
 + For those who love yarn
-```
-bash yarn install
+```bash 
+yarn install
 ```
 
 + For those who love NPM
-```
-bash npm install
+```bash 
+npm install
 ```
 
 ## Runnning the bundle
