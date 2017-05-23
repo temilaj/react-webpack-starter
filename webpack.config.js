@@ -1,17 +1,20 @@
 const path = require('path');
 const port = process.env.PORT || 3000;
-
+const outputPath = path.join(__dirname, "dist")
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
     entry: './src/app.js',
     output: {
-        path: path.join(__dirname, "dist"),
-        filename: 'bundle.js'
+        path: outputPath,
+        filename: 'dist/bundle.js'
     },
     module: {
         loaders: [
             {
                 test: /\.scss$/,
-                loader: 'style-loader!css-loader!sass-loader'
+                use: ExtractTextPlugin.extract({
+                    use: 'css-loader!sass-loader'
+                }),
             },
             {
                 test: /\.js$/,
@@ -23,6 +26,9 @@ module.exports = {
             }
         ]
     },
+    plugins: [
+        new ExtractTextPlugin("dist/bundle.css"),
+    ],
     devServer: {
         port,
     }
