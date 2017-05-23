@@ -1,7 +1,10 @@
+const path = require('path');
+const port = process.env.PORT || 3000;
+
 module.exports = {
-    entry: './src/js/app.js',
+    entry: './src/app.js',
     output: {
-        path: `${__dirname}/dist` ,
+        path: path.join(__dirname, "dist"),
         filename: 'bundle.js'
     },
     module: {
@@ -21,6 +24,6 @@ module.exports = {
         ]
     },
     devServer: {
-        port: 3000
+        port,
     }
 }

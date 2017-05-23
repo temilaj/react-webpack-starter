@@ -1,6 +1,12 @@
 # React Webpack Starter
 A boiler plate for creating react applications bundled by webpack (using ES6, Babel, SASS and webpack development server)
 
+## Features
++ Transpiles ES6 (with Babel)
++ Style with SASS
++ Bundle with webpack
++ Develop locally with webpack development server
+
 ## Requirements
 To run this project, you’ll need to install [node 5 and above](https://nodejs.org/en/) the latest version of Node.js is recommended. You'll also need a global installation of [webpack](https://webpack.js.org/ ) and the [webpack development server](https://webpack.js.org/configuration/dev-server/). 
 
@@ -9,6 +15,12 @@ npm i -g webpack webpack-dev-server
 ```
 
 The dependencies of this project are managed with yarn (see installation guide [here](https://yarnpkg.com/en/)). However you can simply use the node package manager, npm for your dependency management.
+
+## Setting up
++ Clone this project to a folder in your local machine
+```bash
+git clone https://github.com/temilaj/react-webpack-starter.git <FOLDER_NAME_HERE>
+```
 
 ## Installing Packages
 + For those who love yarn
@@ -34,7 +46,7 @@ or
 ```
 ## Running the app in Development
 
-Run `npm start` to intialize and run the webpack development server. Navigate to [http://localhost:3000/](http://localhost:3001). The app will automatically reload if you change any of the source files.
+Run `npm start` to intialize and run the webpack development server. Navigate to [http://localhost:3000/](http://localhost:3000). The app will automatically reload if you change any of the source files.
 
 ## Running the app in Production
 
