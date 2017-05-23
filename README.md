@@ -2,10 +2,10 @@
 A boiler plate for creating react applications bundled by webpack (using ES6, Babel, SASS and webpack development server)
 
 ## Features
-+ Transpiles ES6 (with Babel)
-+ Style with SASS
-+ Bundle with webpack
-+ Develop locally with webpack development server
++ ES6 => ES5 code transpiling (with Babel)
++ Styling with SASS
++ File bundling with webpack
++ local development with the webpack development server
 
 ## Requirements
 To run this project, you’ll need to install [node 5 and above](https://nodejs.org/en/) the latest version of Node.js is recommended. You'll also need a global installation of [webpack](https://webpack.js.org/ ) and the [webpack development server](https://webpack.js.org/configuration/dev-server/). 
