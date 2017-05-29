@@ -3,9 +3,9 @@ const port = process.env.PORT || 3000;
 const outputPath = path.join(__dirname, "dist")
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
-    entry: './src/app.js',
+    entry: './src/app.jsx',
     output: {
-        path: outputPath,
+        path: __dirname,
         filename: 'dist/bundle.js'
     },
     module: {
@@ -17,7 +17,7 @@ module.exports = {
                 }),
             },
             {
-                test: /\.js$/,
+                test: /\.(js|jsx)$/,
                 loader: 'babel-loader',
                 exclude: /node_modules/, 
                 query: {
