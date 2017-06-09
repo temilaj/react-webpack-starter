@@ -1,4 +1,6 @@
 # React Webpack Starter
+![Build Status](https://travis-ci.org/temilaj/react-webpack-starter.svg?branch=chore/integrate-travis-ci)
+
 A boiler plate for creating react applications bundled by webpack (using ES6, Babel, SASS and webpack development server)
 
 ## Features
