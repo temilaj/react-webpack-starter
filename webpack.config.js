@@ -8,6 +8,10 @@ module.exports = {
         path: __dirname,
         filename: 'dist/bundle.js'
     },
+    resolve: {
+        modules: ['node_modules', './src'],
+        extensions: ['.js', '.jsx'],
+    },
     module: {
         loaders: [
             {
