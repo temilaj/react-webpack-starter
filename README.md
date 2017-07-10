@@ -54,14 +54,14 @@ Run `npm start` to intialize and run the webpack development server. Navigate to
 
 ## Running the app in Production
 
-If you want to run the app in production, set the `NODE_ENV` environment variable to `production`.
+To run the app in production build of the app, use either of the following.
 
 ```bash
- NODE_ENV=production yarn start
+ yarn run production
 ```
 or
 ```bash
- NODE_ENV=production npm start
+ npm run production
 ```
 
 ## LICENSE
