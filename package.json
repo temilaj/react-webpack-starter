@@ -5,7 +5,8 @@
   "main": "src/js/app.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.dev.js",
-    "build": "webpack"
+    "build": "webpack",
+    "production": "webpack-dev-server --config webpack.config.production.js"
   },
   "homepage": "https://github.com/temilaj/react-webpack-starter",
   "repository": "https://github.com/temilaj/react-webpack-starter.git",
