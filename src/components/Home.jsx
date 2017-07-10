@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 const formatName = user => `${user.firstName} ${user.lastName}`;
 
@@ -7,7 +7,7 @@ const user = {
   lastName: 'Doe'
 };
 
-class Home extends React.Component{
+class Home extends Component{
   render() {
     return (
      <div>

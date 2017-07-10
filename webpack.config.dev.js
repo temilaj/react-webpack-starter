@@ -1,9 +1,13 @@
 const path = require('path');
+const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 const port = process.env.PORT || 3000;
 const outputPath = path.join(__dirname, "dist")
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 module.exports = {
-    entry: './src/app.jsx',
+    entry: './src/App.jsx',
     output: {
         path: __dirname,
         filename: 'dist/bundle.js'
@@ -21,6 +25,12 @@ module.exports = {
                 }),
             },
             {
+                test: /\.css$/,
+                use: ExtractTextPlugin.extract({
+                    use: 'css-loader'
+                }),
+            },
+            {
                 test: /\.(js|jsx)$/,
                 loader: 'babel-loader',
                 exclude: /node_modules/, 
@@ -31,10 +41,17 @@ module.exports = {
         ]
     },
     plugins: [
-        new ExtractTextPlugin("dist/bundle.css"),
+        new ExtractTextPlugin("bundle.css"),
+        new webpack.HotModuleReplacementPlugin(),
+        new HtmlWebpackPlugin({
+            inject: true,
+            template: path.join(__dirname, '/index.html')
+        }),
+        new webpack.EnvironmentPlugin({ NODE_ENV: 'development' }),
     ],
     devtool: "source-map",
     devServer: {
         port,
+        hot: true
     }
 }

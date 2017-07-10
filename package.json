@@ -1,28 +1,37 @@
 {
-  "name": "react-webpack-starter",
+  "name": "react-webpack-kit",
   "version": "1.0.0",
   "description": "a boiler plate for creating react applications bundled by webpack",
   "main": "src/js/app.js",
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server --config webpack.config.dev.js",
     "build": "webpack"
   },
+  "homepage": "https://github.com/temilaj/react-webpack-starter",
   "repository": "https://github.com/temilaj/react-webpack-starter.git",
-  "author": "Temi Lajumoke <temi@temilajumoke.com>",
+  "keywords": [
+    "react",
+    "webpack",
+    "react native",
+    "react starter",
+    "react boilerplate"
+  ],
+  "author": "Temi Lajumoke <temi@temilajumoke.com> (http://temilajumoke.com)",
   "license": "MIT",
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
   "devDependencies": {
-    "babel-core": "^6.24.1",
-    "babel-loader": "^7.0.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "css-loader": "^0.28.1",
-    "extract-text-webpack-plugin": "^2.1.0",
-    "node-sass": "^4.5.3",
-    "sass-loader": "^6.0.5",
-    "webpack": "^2.5.1"
+    "babel-core": "6.24.1",
+    "babel-loader": "7.0.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-react": "6.24.1",
+    "css-loader": "0.28.1",
+    "extract-text-webpack-plugin": "2.1.0",
+    "html-webpack-plugin": "^2.29.0",
+    "node-sass": "4.5.3",
+    "sass-loader": "6.0.5",
+    "webpack": "2.5.1"
   }
 }
