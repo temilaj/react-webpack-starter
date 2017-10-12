@@ -1,0 +1,12 @@
+{
+  "presets": [
+    ["env", { 
+      "modules": false, 
+      "targets": {
+        "node": "current"
+      }
+    }],
+    "react",
+    "react-hmre"
+  ]
+}

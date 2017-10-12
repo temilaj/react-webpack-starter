@@ -12,7 +12,7 @@ A boiler plate for creating react applications bundled by webpack (using ES6, Ba
 + local development with the webpack development server
 
 ## Requirements
-To run this project, you’ll need to install [node 5 and above](https://nodejs.org/en/) the latest version of Node.js is recommended. You'll also need a global installation of [webpack](https://webpack.js.org/ ) and the [webpack development server](https://webpack.js.org/configuration/dev-server/). 
+To run this project, you’ll need to install [node 5 and above](https://nodejs.org/en/). The latest version of Node.js is recommended. You'll also need a global installation of [webpack](https://webpack.js.org/ ) and the [webpack development server](https://webpack.js.org/configuration/dev-server/). 
 
 ```
 npm i -g webpack webpack-dev-server
@@ -21,9 +21,13 @@ npm i -g webpack webpack-dev-server
 The dependencies of this project are managed with yarn (see installation guide [here](https://yarnpkg.com/en/)). However you can simply use the node package manager, npm for your dependency management.
 
 ## Setting up
-+ Clone this project to a folder in your local machine
++ Clone this project to any folder on your local machine
 ```bash
 git clone https://github.com/temilaj/react-webpack-starter.git <FOLDER_NAME_HERE>
+```
++ Navigate into the folder name specified
+```bash
+cd <FOLDER_NAME_HERE>
 ```
 
 ## Installing Packages

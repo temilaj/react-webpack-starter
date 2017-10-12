@@ -33,10 +33,7 @@ module.exports = {
             {
                 test: /\.(js|jsx)$/,
                 loader: 'babel-loader',
-                exclude: /node_modules/, 
-                query: {
-                    presets:['es2015','react']
-                }
+                exclude: /node_modules/
             }
         ]
     },
@@ -52,6 +49,7 @@ module.exports = {
     devtool: "source-map",
     devServer: {
         port,
-        hot: true
+        hot: true,
+        historyApiFallback: true
     }
 }

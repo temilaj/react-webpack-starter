@@ -34,15 +34,11 @@ module.exports = {
                 test: /\.(js|jsx)$/,
                 loader: 'babel-loader',
                 exclude: /node_modules/, 
-                query: {
-                    presets:['es2015','react']
-                }
             }
         ]
     },
     plugins: [
         new ExtractTextPlugin("bundle.css"),
-        new webpack.HotModuleReplacementPlugin(),
         new webpack.optimize.UglifyJsPlugin({
             compress: {
                 screw_ie8: true,
@@ -76,11 +72,11 @@ module.exports = {
         }),
         new webpack.EnvironmentPlugin({ NODE_ENV: 'production' }),
     ],
-    devtool: "cheap-source-map",
+    devtool: "source-map",
     devServer: {
         port,
-        hot: true,
-        compress: true
-
+        compress: true,
+        contentBase: './dist',
+        historyApiFallback: true
     }
 }

@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 const formatName = user => `${user.firstName} ${user.lastName}`;
 
 const user = {
-  firstName: 'John',
-  lastName: 'Doe'
+  firstName: 'Jone',
+  lastName: 'Dane'
 };
 
 class Home extends Component{
