@@ -1,20 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const formatName = user => `${user.firstName} ${user.lastName}`;
 
 const user = {
-  firstName: 'Jone',
-  lastName: 'Dane'
+  firstName: 'John',
+  lastName: 'Doe'
 };
 
-class Home extends Component{
-  render() {
+const Home = () => {
     return (
      <div>
         <h1>Hello, {formatName(user)}!</h1>
       </div>
    )
-  }
 };
 
 export default Home;

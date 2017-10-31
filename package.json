@@ -4,9 +4,9 @@
   "description": "a boiler plate for creating react applications bundled by webpack",
   "main": "src/js/app.js",
   "scripts": {
-    "start": "webpack-dev-server --config webpack.config.dev.js",
+    "dev": "webpack-dev-server --config webpack.config.dev.js",
     "build": "webpack",
-    "production": "webpack-dev-server --config webpack.config.production.js"
+    "start": "webpack-dev-server --config webpack.config.production.js"
   },
   "homepage": "https://github.com/temilaj/react-webpack-starter",
   "repository": "https://github.com/temilaj/react-webpack-starter.git",
@@ -20,11 +20,13 @@
   "author": "Temi Lajumoke <temi@temilajumoke.com> (http://temilajumoke.com)",
   "license": "MIT",
   "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-react-hmre": "^1.1.1",
     "node-sass": "^4.5.3",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "react-hot-loader": "^3.1.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

@@ -1,12 +1,6 @@
 {
   "presets": [
-    ["env", { 
-      "modules": false, 
-      "targets": {
-        "node": "current"
-      }
-    }],
-    "react",
-    "react-hmre"
+    "es2015",
+    "react"
   ]
 }
