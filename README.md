@@ -3,20 +3,16 @@
 ![Build Status](https://travis-ci.org/temilaj/react-webpack-starter.svg?branch=master) 
 [![GitHub version](https://badge.fury.io/gh/temilaj%2Freact-webpack-starter.svg)](https://badge.fury.io/gh/temilaj%2Freact-webpack-starter)
 
-A boiler plate for creating react applications bundled by webpack (using ES6, Babel, SASS and webpack development server)
+A boiler plate for creating react applications bundled by webpack (using ES6+, Babel, SASS and webpack development server)
 
 ## Features
-+ ES6 => ES5 code transpiling (with Babel)
++ ES6 and greater => ES5 code transpiling (with Babel)
 + Styling with SASS
 + File bundling with webpack
 + local development with the webpack development server
 
 ## Requirements
-To run this project, you’ll need to install [node 5 and above](https://nodejs.org/en/). The latest version of Node.js is recommended. You'll also need a global installation of [webpack](https://webpack.js.org/ ) and the [webpack development server](https://webpack.js.org/configuration/dev-server/). 
-
-```
-npm i -g webpack webpack-dev-server
-```
+To run this project, you’ll need to install [node 5 and above](https://nodejs.org/en/). The latest version of Node.js is recommended. 
 
 The dependencies of this project are managed with yarn (see installation guide [here](https://yarnpkg.com/en/)). However you can simply use the node package manager, npm for your dependency management.
 
@@ -44,7 +40,7 @@ npm install
 ## Runnning the bundle
 
 ```bash
- yarn run build
+ yarn build
 ```
 
 or 
@@ -61,11 +57,11 @@ Run `npm start` to intialize and run the webpack development server. Navigate to
 To run the app in production build of the app, use either of the following.
 
 ```bash
- yarn run production
+ yarn start
 ```
 or
 ```bash
- npm run production
+ npm start
 ```
 
 ## LICENSE
