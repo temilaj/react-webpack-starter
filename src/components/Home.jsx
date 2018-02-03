@@ -4,15 +4,14 @@ const formatName = user => `${user.firstName} ${user.lastName}`;
 
 const user = {
   firstName: 'John',
-  lastName: 'Doe'
+  lastName: 'Does'
 };
 
-const Home = () => {
-    return (
-     <div>
-        <h1>Hello, {formatName(user)}!</h1>
-      </div>
-   )
-};
+const Home = () => (
+  <div>
+    <h1>Hello, {formatName(user)}!</h1>
+  </div>
+)
+
 
 export default Home;

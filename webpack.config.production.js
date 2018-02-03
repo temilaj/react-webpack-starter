@@ -1,23 +1,23 @@
 const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const port = process.env.PORT || 3000;
 const outputPath = path.join(__dirname, "dist")
 
 module.exports = {
+	context: __dirname,
 	entry: './src/App.jsx',
 	output: {
-		path: __dirname,
-		filename: 'dist/bundle.js'
+		path: path.join(__dirname, 'dist'),
+		filename: 'bundle.js',
 	},
 	resolve: {
 		modules: ['node_modules', './src'],
 		extensions: ['.js', '.jsx'],
 	},
 	module: {
-		loaders: [
+		rules: [
 			{
 				test: /\.scss$/,
 				use: ExtractTextPlugin.extract({
@@ -41,34 +41,10 @@ module.exports = {
 		new ExtractTextPlugin("bundle.css"),
 		new webpack.optimize.UglifyJsPlugin({
 			compress: {
-				screw_ie8: true,
 				warnings: false
-			},
-			mangle: {
-				screw_ie8: true
-			},
-			output: {
-				comments: false,
-				screw_ie8: true
 			},
 			minimize: true,
 			sourceMap: true
-		}),
-		new HtmlWebpackPlugin({
-			inject: true,
-			template: path.join(__dirname, '/index.html'),
-			minify: {
-				removeComments: true,
-				collapseWhitespace: true,
-				removeRedundantAttributes: true,
-				useShortDoctype: true,
-				removeEmptyAttributes: true,
-				removeStyleLinkTypeAttributes: true,
-				keepClosingSlash: true,
-				minifyJS: true,
-				minifyCSS: true,
-				minifyURLs: true
-			}
 		}),
 		new webpack.EnvironmentPlugin({ NODE_ENV: 'production' }),
 	],
@@ -76,6 +52,7 @@ module.exports = {
 	devServer: {
 		port,
 		compress: true,
-		historyApiFallback: true
+		historyApiFallback: true,
+		publicPath: '/dist/',
 	}
 }

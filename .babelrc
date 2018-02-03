@@ -1,6 +1,13 @@
 {
   "presets": [
-    "es2015",
-    "react"
+    ["env", { 
+      "targets": {
+        "browsers": "last 2 versions"
+      },
+      "loose": true,
+      "modules": false
+    }],
+    "react",
+    "react-hmre"
   ]
 }
