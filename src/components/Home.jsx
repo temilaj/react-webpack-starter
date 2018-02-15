@@ -4,7 +4,7 @@ const formatName = user => `${user.firstName} ${user.lastName}`;
 
 const user = {
   firstName: 'John',
-  lastName: 'Does'
+  lastName: 'Doe'
 };
 
 const Home = () => (
