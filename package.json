@@ -7,7 +7,8 @@
     "dev": "./node_modules/.bin/webpack-dev-server --config webpack.config.dev.js",
     "build": "./node_modules/.bin/webpack --config webpack.config.dev.js",
     "build:production": "./node_modules/.bin/webpack --config webpack.config.production.js",
-    "start": "./node_modules/.bin/webpack-dev-server --config webpack.config.production.js"
+    "start": "./node_modules/.bin/webpack-dev-server --config webpack.config.production.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "homepage": "https://github.com/temilaj/react-webpack-starter",
   "repository": "https://github.com/temilaj/react-webpack-starter.git",
@@ -21,8 +22,8 @@
   "author": "Temi Lajumoke <temi@temilajumoke.com> (http://temilajumoke.com)",
   "license": "MIT",
   "dependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
