@@ -22,6 +22,7 @@
   "author": "Temi Lajumoke <temi@temilajumoke.com> (http://temilajumoke.com)",
   "license": "MIT",
   "dependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
   },
